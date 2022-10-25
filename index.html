@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Virtual Reality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/assets/styles/reset.css">
+    <link rel="stylesheet" href="./src/assets/styles/styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <p class="header-light">Light</p>
+        <img src="./src/assets/images/Header/Ellipse.svg" alt="ellipse" class="header-ellipse">
+        <nav class="header-nav">
+            <ul class="header-nav__menu">
+                <li id="menuHome" class="menu-item">Home</li>
+                <li id="menuCompany" class="menu-item">Company</li>
+                <li id="menuFeatures" class="menu-item">Features</li>
+            </ul>
+            <img id="headerUser" src="./src/assets/images/AuthedHeader/user.png" alt="user" class="authedheader-nav__user">
+            <button id="headerAuthBtn" class="header-nav__auth">Sign In</button>
+        </nav>
+        <div class="menu-burger">
+            <button id="burgerMenuBtn" class="menu-burger__btn">
+                <img src="./src/assets/icons/burger.svg" alt="user">
+            </button>
+            <div id="headerBurgerList" class="menu-burger__lists">
+                <ul class="menu-burger__items">
+                    <li class="menu-burger__item">Home</li>
+                    <li class="menu-burger__item">Company</li>
+                    <li class="menu-burger__item">Features</li>
+                </ul>
+                <button id="closeBurgerMenu" class="menu-burger__btn-close">X</button>
+            </div>
+        </div>
+        <div id="authedUserMenu" class="authedheader">
+            <div class="authedheader-nav__user-menu">
+                <ul class="nav__user-menu">
+                    <li class="nav__user-item">
+                        User menu
+                        <img id="chevronUp" class="chevron-up" src="./src/assets/icons/chevron-up.svg" alt="up">
+                    </li>
+                    <li class="nav__user-item">Recently Added</li>
+                    <li class="nav__user-item">Card management</li>
+                    <li id="closeUserMenu" class="nav__user-item">Log out</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero__text">
+            <h1 class="hero__text-name">Let`s Explore Three-Dimensional visual</h1>
+            <p class="hero__text-description">With virtual technology you can see the digital world feel more real and you can play the game with a new style.</p>
+            <div class="hero__text-buttons">
+                <button id="heroBtnGet" class="buttons__btn-get">Get it Now</button>
+                <button id="heroBtnExplore" class="buttons__btn-explore">Explore Device</button>
+            </div>
+            <div class="hero__text-users">
+                <ul class="text-users__avatars">
+                    <li>
+                        <img src="./src/assets/images/Hero/User_1.png" alt="user photo" class="avatar">
+                    </li>
+                    <li>
+                        <img src="./src/assets/images/Hero/User_2.png" alt="user photo" class="avatar">
+                    </li>
+                    <li>
+                        <img src="./src/assets/images/Hero/User_3.png" alt="user photo" class="avatar">
+                    </li>
+                    <li>
+                        <img src="./src/assets/images/Hero/User_4.png" alt="user photo" class="avatar">
+                    </li>
+                </ul>
+                <div class="text-users__online">
+                    <div class="online-dot"></div>
+                    <span>400k people online</span>
+                </div>
+            </div>
+            <img src="./src/assets/images/Hero/Ellipse 6.svg" alt="Ellipse" class="hero-ellipse">
+        </div>
+        <div class="hero__logo">
+            <img src="./src/assets/images/Hero/hero.png" alt="Cinematic Virtual Reality" class="hero-logo">
+            <div class="hero__logo-text">
+                <h2 class="text__logo-name">Cinematic Virtual Reality</h2>
+                <hr class="text__logo-line">
+                <p class="text__logo-descr">Let`s be the best for more real and effective results and ready <br> to explore the limitless world that we <br> have prepared for you.</p>
+            </div>
+        </div>
+        <img src="./src/assets/images/Hero/Ellipse 7.svg" alt="Ellipse" class="hero-ellipse-right">
+    </div>
+    <div class="content">
+        <div class="content-photos">
+            <img src="./src/assets/images/Content/woman.png" alt="woman" class="content-photos__woman">
+            <img src="./src/assets/images/Content/man.png" alt="man" class="content-photos__man">
+        </div>
+        <div class="content-text">
+            <h2 class="content-text__name">New Experience In Playing Game</h2>
+            <p class="content-text__descr">You can try playing the game with a new style and of course a more real feel, like you are the main character in your game and adventure in this new digital world.</p>
+            <button id="contentBtn" class="content-text__btn">Get it Now</button>
+        </div>
+    </div>
+    <div class="experience">  
+        <img src="./src/assets/images/Experience/bg_experience.png" alt="Background" class="experience__logo">
+        <div class="experience__content">
+            <h2 class="experience__text">Awesome experiences with virtual reality world</h2>
+            <img src="./src/assets/images/Experience/video.png" alt="video" class="experience__video">
+        </div>
+    </div>  
+    <div class="listitemsheader">
+        <h2 class="listitemsheader-name">Mixed Reality Headsets</h2>
+        <select id="sortSelect" name="sort" class="listitemsheader-sort">
+            <option class="listitemsheader-item" value="newFirst">New first</option>
+            <option class="listitemsheader-item" value="newLast">New last</option>
+        </select>
+    </div>
+    <ul class="listitems" id="headSets">
+        <!-- <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-back.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Metaverse</h6>
+                    <p class="item__descr">A Network of 3D virtual worlds focused on social connection.</p>      
+                </div>
+            </div>
+        </li>
+        <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-front.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Web3</h6>
+                    <p class="item__descr">Alternative world play and meet people without ever leaving your home.</p>      
+                </div>
+            </div>
+        </li>
+        <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-hand.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Cyberspace</h6>
+                    <p class="item__descr">Worshippers around the world visit some of the home experiences.</p>      
+                </div>
+            </div>
+        </li>
+        <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-glasses.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Multiverse</h6>
+                    <p class="item__descr">In the future, the metaverse could be split into two rest of the world.</p>      
+                </div>
+            </div>
+        </li>
+        <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-touch.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Virtual worlds</h6>
+                    <p class="item__descr">For virtual reality to feel immersive, it needs to stinking it up.</p>      
+                </div>
+            </div>
+        </li>
+        <li class="listitems__item">
+            <div class="item__details">
+                <img src="./src/assets/images/ListItems/vr-side.png" alt="man in vr helmet" class="item__photo">
+                <div class="item__text">
+                    <h6 class="item__name">Supranet</h6>
+                    <p class="item__descr">Everything you never wanted about the future talking about the future.</p>      
+                </div>
+            </div>
+        </li> -->
+    </ul>
+    <img src="./src/assets/images/ListItems/Ellipse 18.svg" alt="Ellipse" class="listitems__ellipse">
+    <ul class="pagination">
+        <li class="pagination-number"><img src="./src/assets/icons/left.svg" alt="left"></li>
+        <li class="pagination-number pagination-number--active">1</li>
+        <li class="pagination-number">2</li>
+        <li class="pagination-number">…</li>
+        <li class="pagination-number">9</li>
+        <li class="pagination-number">10</li>
+        <li class="pagination-number"><img src="./src/assets/icons/right.svg" alt="right"></li>
+    </ul>
+     <div class="clients">
+      <h2 class="clients__name">What our clients say</h2>
+      <p class="clients__descr">See what our customer say about us. It really matter for us. How good or bad we will make ir for evaluation to make EhyalLive better.</p>
+      <ul class="clients__review" id="clientsReview">
+        <!-- <li class="review-info">
+          <p class="review-header"><span>starstar</span>star</p>
+          <p class="review-text">“I know in real-time where the money is spent,and I don`t have to lend out the company`s credit card anymore. What a relief!”</p>
+          <div class="review-contacts">
+            <img src="./src/assets/images/Clients/user1.png" alt="user avatar" class="review-contacts__photo">
+            <div class="review-contacts__details">
+              <p class="review-contacts__name">Denny Hilguston</p>
+              <address class="review-contacts__address">@denny.hill</address>
+            </div>
+          </div>
+        </li>
+        <li class="review-info">
+          <p class="review-header"><span>starstar</span>star</p>
+          <p class="review-text">VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap.</p>
+          <div class="review-contacts">
+            <img src="./src/assets/images/Clients/user2.png" alt="user avatar" class="review-contacts__photo">
+            <div class="review-contacts__details">
+              <p class="review-contacts__name">Vani Pandey</p>
+              <address class="review-contacts__address">@vani.pandey</address>
+            </div>
+          </div>
+        </li>
+        <li class="review-info">
+          <p class="review-header"><span>starstar</span>star</p>
+          <p class="review-text">I can actually see the improvement in the graphics, not having the external sensors is a big plus.</p>
+          <div class="review-contacts">
+            <img src="./src/assets/images/Clients/user3.png" alt="user avatar" class="review-contacts__photo">
+            <div class="review-contacts__details">
+              <p class="review-contacts__name">milly Singh</p>
+              <address class="review-contacts__address">@milly.singh</address>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <img src="./src/assets/images/Clients/Ellipse 8.svg" alt="Ellipse" class="clients-ellipse">
+        
+    </div>
+   <div class="company">
+      <img src="./src/assets/images/Company/Ellipse 19.svg" alt="Ellipse" class="company-ellipse">
+      <div class="company-info">
+        <h2 class="company-info__name">Our company values culture<img src="./src/assets/icons/Company/heart.svg" alt="heart"></h2>
+        <p  class="company-info__descr">We specialize in creating visual identities for products and branda in your company.</p>
+      </div>
+        <ul class="company-advantages">
+          <li class="advantages__details">
+            <img src="./src/assets/icons/Company/victory-hand.svg" alt="victory-hand" class="advantages__icon">
+            <p class="advantages__name">Be Sincere</p>
+          </li>
+          <li class="advantages__details">
+            <img src="./src/assets/icons/Company/hands.svg" alt="hands" class="advantages__icon">
+            <p class="advantages__name">Stronger together</p>
+          </li>
+          <li class="advantages__details">
+            <img src="./src/assets/icons/Company/done.svg" alt="done" class="advantages__icon">
+            <p class="advantages__name">Keep it simple</p>
+          </li>
+          <li class="advantages__details">
+            <img src="./src/assets/icons/Company/light.svg" alt="light bulb" class="advantages__icon">
+            <p class="advantages__name">Take intelligent risks</p>
+          </li>
+        </ul>
+    </div>
+   <div class="explore">
+      <div class="explore__info">
+        <h2 class="explore__name">Explore product in new way<img src="./src/assets/icons/Explore/arrow-left.svg" alt="arrow"></h2>
+        <p class="explore__descr">We specialize in creating visual identities for products and branda in your company.</p>
+        <form class="explore__form">
+          <input id="exploreEmail" placeholder="Your Email" type="email" value="" class="explore__form-input">
+          <button id="exploreFormBtn" type="submit" class="explore__form-btn">Start<img src="./src/assets/icons/Explore/arrow-diag.svg" alt="arrow diagonal" class="explore__form-icon"></button>
+        </form>
+      </div>
+      <img src="./src/assets/images/Explore/tocuh-fingers.png" alt="touch fingers" class="explore__img">
+    </div>
+
+    <div id="addingCardDialog" class="addingcard_modal" >
+        <img id="closeAddingCard" class="close_dialog" src="./src/assets/icons/close.svg" alt="close dialog">
+        <div class="addingcard__bg">
+            <img src="./src/assets/images/AddingCard/bg_addingcard.png" alt="Background" class="addingcard__bg-img">
+            <h2 class="addingcard__bg-name">Realities cards</h2>
+        </div>
+        <div  class="addingcard">
+            <h3 class="addingcard__name">Add new card</h3>
+            <form class="addingcard__form" id="addincardForm">
+                <input name="name" id="addincardName" value="" class="addingcard__input" placeholder="Card name" type="text">
+                <input name="description" id="addincardDescr" value="" class="addingcard__input" placeholder="Card description" type="text">
+                <input name="image name" id="addincardImage" value="" class="addingcard__input" placeholder="Card image name" type="text">
+                <button type="submit" class="addingcard__button">Add</button>
+            </form>    
+        </div>    
+        <img src="./src/assets/icons/AddingCard/Ellipse 18.svg" alt="ellipse" class="addingcard__ellipse"> 
+    </div>
+
+    <div id="signInModal" class="signin_modal" >
+        <div class="signin">
+            <h3 class="signin__name">Sign in</h3>
+            <img id="closeSignIn" class="close_dialog" src="./src/assets/icons/close.svg" alt="close dialog">
+            <form  id="signInForm" class="signin__form">
+                <input name="email/username" id="signInUser" value="" placeholder="Email or username" type="text" class="signin__input">
+                <input name="password" id="signInPassword" value="" placeholder="Password" type="password" class="signin__input">
+                <button id="submitSignIn" type="submit" class="signin__sign-btn">Sign in</button>
+            </form>     
+        </div>   
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="./src/assets/js/script.js"></script>
+    
+    <script src="./src/assets/js/mock.js"></script>
+</body>
+</html>
